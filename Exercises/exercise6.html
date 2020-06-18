@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 22pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Penalty system</h1>
+    Car speed: <input type="Number" name='vel' id='vel'>
+    <input type="button" value="Verificar" onclick="checkpen()">
+    <div id ='situation'>
+    </div>
+    <script>
+        function checkpen() {
+            var speed = window.document.getElementById('vel')
+            var situ = window.document.getElementById('situation')
+            if (Number(vel.value) > 60) {
+                situ.innerText = 'Take it easy bro'
+            }else {
+                situ.innerText = 'Drive with careful'
+            }
+        }
+    </script>
+</body>
+</html>

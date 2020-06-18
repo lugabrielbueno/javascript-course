@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+    <style>
+        div {
+            background-color: aqua;
+            padding: 40px;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 30pt;
+            max-width: max-content;
+            box-shadow: black;
+        }
+    </style>
+</head>
+<body>
+    <div id='area' onclick="clicar()" onmouseover="entrou()" onmouseout="tirou()">Interaja</div>
+    
+    <script>
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+        function tirou() {
+            var a = window.document.getElementById('area')
+            a.style.backgroundColor = 'aqua'
+            a.innerText = 'Tirou'
+        }
+        function entrou() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Entrou'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="number1" id="number1">
+    <input type="number" name='number2' id='number2'><br>
+    <input type="button" value="Sum" onclick="sum()">
+    <input type='button' value="Multiply" onclick="multiply()">
+    <input type="button" value="Division" onclick="division()">
+    
+    
+    <div id='result'></div>
+    <script>
+        function sum() {
+        var n1 = window.document.getElementById('number1')
+        var n2 = window.document.getElementById('number2')
+        var result = Number(n1.value)+Number(n2.value)
+        window.alert('The sum between '+String(n1.value)+' and '+String(n2.value)+' is '+String(result))
+        }
+        function multiply() {
+            var n1 = window.document.getElementById('number1')
+            var n2 = window.document.getElementById('number2')
+            var result = Number(n1.value)*Number(n2.value)
+            var res = window.document.getElementById('result')
+            res.innerText = 'The result is '+String(result)
+        }
+        function division() {
+            var n1 = window.document.getElementById('number1')
+            var n2 = window.document.getElementById('number2')
+            var result = Number(n1.value)/Number(n2.value)
+            window.alert('The division between '+String(n1.value)+' and '+String(n2.value)+' is '+ String(result))
+        }
+    </script>
+
+</body>
+</html>
