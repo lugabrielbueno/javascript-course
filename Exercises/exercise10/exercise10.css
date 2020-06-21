@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+div {
+    background-color: white;
+    padding: 50px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 3px 3px 3px black;
+    color: gray;
+    border-radius: 10%;
+    position: relative;
+    margin: auto;
+}
+h2 {
+    margin-top: -30px;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+footer {
+    position: relative;
+    margin-top: 10px;
+}
