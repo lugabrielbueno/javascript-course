@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise11.css">
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <form action="" id='form'>
+        <label>Birthday Year: <input id='birth' type="number" min="1900" max="2020"></label><br><br>
+
+        <table id='gen'>
+        <tr><td>Gender:</td><td><label><input type="radio" name='Gen' id='gen' value='male'> Male</td></label>
+        <td><label><input type="radio"  name="Gen" id="gen" value='fem'>Female</td></tr></label>
+        </table><br>
+        <input type="button" value='Verify' id='verify' onclick="change()">
+        <h3 id='msg'>Fil the data to see the result !</h3>
+        <img id='image' src="">
+    </form>
+    <script src='exercise11.js'></script>
+</body>
+</html>

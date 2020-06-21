@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+body {
+    background-color: rgb(92, 92, 228);
+    font-size: 19pt;
+    color:black;
+    font-family: Arial, sans-serif;
+
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+form {
+    background-color: white;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 10px;
+    max-width: max-content;
+    padding: 15px;
+    position: relative;
+    margin: auto;
+
+}
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: 540;
+    font-size: 25pt;
+}
+img {
+    margin-left: 100px;
+}
+input#birth {
+    padding: 6px 10px;
+    font-size: 12pt;
+}
+input#verify {
+    font-size: 15pt;
+}
