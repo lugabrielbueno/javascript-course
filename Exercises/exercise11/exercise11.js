@@ -31,3 +31,4 @@ function change() {
         msg.innerText = `We detected a woman with ${age} years old`
     }
 }
+
