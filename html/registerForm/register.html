@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <form>
+        <H1>REGISTER</H1>
+        <label for="firstName">First Name:</label>
+        <input type="text" maxlength="50" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" maxlength="50">
+        <br>
+        <label for="male">Male</label>
+        <input name='sex' id="male" value="male" type="radio">
+        <label for="female">Female</label>
+        <input name='sex' id="female" value="female" type="radio">
+        <label for="other">Other</label>
+        <input name="sex" id="other" value="other" type="radio">
+        <br>
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="email">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" required>
+        <br>
+        <label for="birth">Birthday:</label>
+        <input name='day' type="day" maxlength="2">
+        <input name='month' type="month">
+        <br>
+        <label for="terms">I agree to the therms and conditions</label>
+        <input name="terms" id="terms" type="checkbox">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
