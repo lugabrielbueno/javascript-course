@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placar</title>
+</head>
+<body>
+    <script src='ppt.js'></script>
+    <h1><span id='player1_pontos'>0</span> a <span id='player2_pontos'>0</span></h1>
+
+    <p>Jogando até: <input id='limite' type='number' min='0' max='100'></p>
+    <button id='botao1' onclick="pontos_jogador1()">Jogador 1</button>
+    <button id='botao2' onclick="pontos_jogador2()">Jogador 2</button>
+    <button id='botao_reiniciar' onclick="reiniciar()">Reiniciar</button>
+</body>
+</html>
