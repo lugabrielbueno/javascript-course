@@ -24,17 +24,63 @@ body{
     font-size: 20pt;
     color: white;
 }
-#gerar,#facil{
+#gerar{
     margin-left: 28%;
+}
+#facil{
+    margin-left: 135px;
+    position: absolute;
+}
+#dificil{
+    position: absolute;
+    margin-left: 180px;
 }
 table{
     margin: 3% auto;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+
 }
 td {
     background-color: white;
     padding: 80px;
     border-radius: 20px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
 }
 tr{
     margin-bottom:10px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa1{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa2{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa3{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa4{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa5{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#alternativa6{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#head{
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#texto{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

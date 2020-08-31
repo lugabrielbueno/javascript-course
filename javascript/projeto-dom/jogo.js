@@ -1,8 +1,18 @@
-
+var cor = document.getElementById('cor_codigo');
+var esc = "("+randint(0,255)+", "+randint(0,255)+", "+randint(0,255)+")";
+cor.textContent = esc;
+document.getElementById('alternativa1').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+document.getElementById('alternativa2').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+document.getElementById('alternativa3').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+document.getElementById('alternativa4').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+document.getElementById('alternativa5').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+document.getElementById('alternativa6').style.backgroundColor = "rgb("+randint(0,255)+","+randint(0,255)+","+randint(0,255)+")";
+principal(esc);
 //criando eventos de clique 
 
 var gerador = document.getElementById('gerar');
 gerador.addEventListener('click',function(){
+
     var cor = document.getElementById('cor_codigo');
     var esc = "("+randint(0,255)+", "+randint(0,255)+", "+randint(0,255)+")";
     cor.textContent = esc;
@@ -18,6 +28,7 @@ gerador.addEventListener('click',function(){
 
 var facil = document.getElementById('facil');
 facil.addEventListener('click',function(){
+
     var cor = document.getElementById('cor_codigo');
     var esc = "("+randint(0,255)+", "+randint(0,255)+", "+randint(0,255)+")";
     cor.textContent = esc;
@@ -31,7 +42,7 @@ facil.addEventListener('click',function(){
 
 var dificil = document.getElementById('dificil');
 dificil.addEventListener('click',function(){
-    document.getElementById('dificuldade_dois').style.display ='table-row';
+    document.getElementById('dificuldade_dois').style.display = 'table-row';
     var cor = document.getElementById('cor_codigo');
     var esc = "("+randint(0,255)+", "+randint(0,255)+", "+randint(0,255)+")";
     cor.textContent = esc;
@@ -73,8 +84,16 @@ return items[Math.floor(Math.random()*items.length)];
 function check(id){
     var checar = document.getElementById(id);
     if (checar.style.backgroundColor == ('rgb'+(document.getElementById('cor_codigo').textContent))){
-        return alert('ACERTOU, PARABÉNS!');
+        document.getElementById('texto').textContent = 'PARABÉNS, VOCÊ ACERTOU!!!'
+        document.getElementById('head').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa1').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa2').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa3').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa4').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa5').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
+        document.getElementById('alternativa6').style.backgroundColor = 'rgb'+(document.getElementById('cor_codigo').textContent);
     }else{
+        document.getElementById('texto').textContent = 'Tente Novamente'
         return checar.style.display = 'none';
     }
 }
