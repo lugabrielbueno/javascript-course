@@ -1,0 +1,9 @@
+#container {
+    width: 360px;
+    margin: 0 auto;
+    border: 2px solid gray;
+}
+.completo{
+    color: rgb(128,128,128);
+    text-decoration: line-through;
+}
